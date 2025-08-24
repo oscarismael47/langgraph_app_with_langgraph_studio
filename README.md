@@ -42,7 +42,18 @@ To run and test the application using LangGraph Studio, use the following comman
 uv langgraph studio
 ```
 
-This will launch LangGraph Studio, which will automatically detect your `langgraph.json` and load the agent
+This will launch LangGraph Studio, which will automatically detect your `langgraph.json` and load the agent for interactive testing.
+
+### Example
+
+Below is a screenshot of the agent running in LangGraph Studio:
+
+![LangGraph Studio Example](./static/langgraph_studio.png)
+
+> The interface shows the agent graph on the left and the chat interaction on the right.
+
+---
+
 
 ## Project Structure
 
