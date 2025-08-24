@@ -1,4 +1,7 @@
 langgraph
+langchain-openai
+langchain-tavily
+langgraph-cli[inmem]
 python-dotenv
 
 ## create env
@@ -11,3 +14,4 @@ python-dotenv
 ## install dependencies
 
 # uv pip install -r requirements.txt
+
