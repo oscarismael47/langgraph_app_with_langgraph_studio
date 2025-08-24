@@ -17,46 +17,45 @@ A sample project demonstrating a LangGraph agent with OpenAI and Tavily tools.
    git clone <your-repo-url>
    cd langgraph_app_with_langgraph_studio
    ```
+
 2. **Install dependencies:**
    ```sh
    pip install -r requirements.txt
    ```
-3. **Set up environment variables:**
-   - Copy `.env.example` to `.env` and update the values with your OpenAI and Tavily credentials.
-
-4. **Run the application:**
+   Or use [uv](https://github.com/astral-sh/uv) for faster installs:
    ```sh
-   streamlit run app.py
+   uv pip install -r requirements.txt
    ```
 
-## Usage
+3. **Set up environment variables:**
+   - Create a `.env` file in the root directory with your OpenAI and Tavily credentials:
+     ```
+     OPENAI_KEY=your-openai-api-key
+     OPENAI_MODEL=gpt-4.1-mini
+     ```
 
-- Interact with the LangGraph agent through the Streamlit interface.
-- Modify the agent's behavior by editing the YAML configuration files.
-- Add or update tools by installing the necessary packages and updating the configuration.
+## Running LangGraph Studio
 
-## Contributing
+To run and test the application using LangGraph Studio, use the following command:
 
-Contributions are welcome! Please follow these steps:
+```sh
+uv langgraph studio
+```
 
-1. Fork the repository.
-2. Create a new branch for your feature or bugfix.
-3. Make your changes and commit them.
-4. Push your branch and create a pull request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This will launch LangGraph Studio, which will automatically detect your `langgraph.json` and load the agent
 
 ## Project Structure
-
-The project has the following structure:
 
 ```
 langgraph_app_with_langgraph_studio/
 ├── chatbot_agent/
-│   └── [agent.py](http://_vscodecontentref_/3)
-├── [langgraph.json](http://_vscodecontentref_/4)
-├── [README.md](http://_vscodecontentref_/5)
+│   └── agent.py
+├── langgraph.json
+├── requirements.txt
+├── README.md
 └── .env
 ```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
