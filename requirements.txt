@@ -12,6 +12,7 @@ python-dotenv
 # .venv\Scripts\Activate.ps1
 
 ## install dependencies
-
 # uv pip install -r requirements.txt
 
+## run langgraph studio
+# uv langgraph studio
